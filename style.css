@@ -586,23 +586,8 @@
       max-width: 96rem;
     }
   }
-  .\!m-1 {
-    margin: calc(var(--spacing) * 1) !important;
-  }
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
-  }
-  .m-0\.5 {
-    margin: calc(var(--spacing) * 0.5);
-  }
   .m-1 {
     margin: calc(var(--spacing) * 1);
-  }
-  .m-1\.5 {
-    margin: calc(var(--spacing) * 1.5);
-  }
-  .m-1\.5\! {
-    margin: calc(var(--spacing) * 1.5) !important;
   }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
@@ -679,12 +664,6 @@
   .resize {
     resize: both;
   }
-  .list-inside {
-    list-style-position: inside;
-  }
-  .list-decimal {
-    list-style-type: decimal;
-  }
   .list-disc {
     list-style-type: disc;
   }
@@ -730,15 +709,6 @@
   }
   .bg-white\/50 {
     background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
-  }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
-  }
-  .p-0\.5 {
-    padding: calc(var(--spacing) * 0.5);
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -815,6 +785,9 @@
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+html, body {
+  overscroll-behavior-y: none;
+}
 body {
   margin: 0;
   font-family: "Silkscreen", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
